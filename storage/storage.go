@@ -6,7 +6,7 @@ import (
 
 func getStorage(name string) Storage {
 	s := js.Global().Get("window").Get(name)
-	if s == js.Null() || s == js.Undefined() {
+	if js.Null().Equal(s) || js.Undefined().Equal(s) {
 		return nil
 	}
 	return jsStorage{s}
@@ -34,7 +34,7 @@ func (s jsStorage) Key(ind int) string {
 
 func (s jsStorage) GetItem(key string) (string, bool) {
 	v := s.v.Call("getItem", key)
-	if v == js.Null() || v == js.Undefined() {
+	if js.Null().Equal(v) || js.Undefined().Equal(v) {
 		return "", false
 	}
 	return v.String(), true

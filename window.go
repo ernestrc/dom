@@ -3,8 +3,9 @@ package dom
 import (
 	"strings"
 
-	"github.com/gascore/dom/js"
 	sjs "syscall/js"
+
+	"github.com/gascore/dom/js"
 )
 
 func GetWindow() *Window {

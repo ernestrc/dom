@@ -1,8 +1,8 @@
 package js
 
 import (
-	"syscall/js"
 	"sync"
+	"syscall/js"
 )
 
 var (
@@ -139,7 +139,7 @@ type Value struct {
 }
 
 func (v Value) isZero() bool {
-	return v == (Value{})
+	return v.Ref.Equal(js.Value{})
 }
 
 // JSRef returns a JS object reference as defined by syscall/js.
@@ -164,12 +164,12 @@ func (v Value) String() string {
 
 // IsNull checks if a value represents JS null object.
 func (v Value) IsNull() bool {
-	return v.Ref == null
+	return v.Ref.Equal(null)
 }
 
 // IsUndefined checks if a value represents JS undefined object.
 func (v Value) IsUndefined() bool {
-	return v.Ref == undefined
+	return v.Ref.Equal(undefined)
 }
 
 // Valid checks if object is defined and not null.

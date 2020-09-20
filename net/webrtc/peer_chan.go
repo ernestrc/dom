@@ -35,7 +35,7 @@ func (c *peerChannel) handleEvent(e chanEvent) {
 	switch e.Type {
 	case eventError:
 		c.mu.Lock()
-		c.err = js.Error{Value: e.Data}
+		c.err = js.Error{Value: e.Data.Ref}
 		c.mu.Unlock()
 		c.Close()
 	case eventClosed:
