@@ -7,7 +7,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/gascore/dom/js"
+	"github.com/ernestrc/dom/js"
 	"github.com/stretchr/testify/require"
 )
 

@@ -3,7 +3,7 @@
 package require
 
 import (
-	"github.com/gascore/dom/js/jstest"
+	"github.com/ernestrc/dom/js/jstest"
 	"net/http"
 	"strings"
 	"testing"

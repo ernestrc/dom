@@ -1,7 +1,7 @@
 package dom
 
 import (
-	"github.com/gascore/dom/js"
+	"github.com/ernestrc/dom/js"
 )
 
 func AsTextNode(v js.Value) *TextNode {

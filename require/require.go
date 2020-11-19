@@ -5,8 +5,8 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/gascore/dom"
-	"github.com/gascore/dom/js"
+	"github.com/ernestrc/dom"
+	"github.com/ernestrc/dom/js"
 )
 
 var required = make(map[string]error)

@@ -1,4 +1,4 @@
-module github.com/gascore/dom
+module github.com/ernestrc/dom
 
 go 1.12
 

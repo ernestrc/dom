@@ -1,7 +1,7 @@
 package ws
 
 import (
-	"github.com/gascore/dom/js/jstest"
+	"github.com/ernestrc/dom/js/jstest"
 	"github.com/stretchr/testify/require"
 	"net/http"
 	"net/rpc"

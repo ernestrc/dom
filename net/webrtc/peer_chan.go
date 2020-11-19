@@ -7,7 +7,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/gascore/dom/js"
+	"github.com/ernestrc/dom/js"
 )
 
 type peerChannel struct {

@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/gascore/dom"
+	"github.com/ernestrc/dom"
 )
 
 // NewElement creates a new SVG element.

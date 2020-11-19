@@ -3,7 +3,7 @@ package dom
 import (
 	"fmt"
 
-	"github.com/gascore/dom/js"
+	"github.com/ernestrc/dom/js"
 )
 
 type EventTarget interface {

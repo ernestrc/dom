@@ -30,14 +30,14 @@ More information about Go's WebAssembly support can be found on [Go's WebAssembl
 Pull the library and install `wasm-server` (optional):
 
 ```
-go get -u github.com/gascore/dom
-go install github.com/gascore/dom/cmd/wasm-server
+go get -u github.com/ernestrc/dom
+go install github.com/ernestrc/dom/cmd/wasm-server
 ```
 
 Run an example app:
 
 ```
-cd $GOPATH/src/github.com/gascore/dom
+cd $GOPATH/src/github.com/ernestrc/dom
 wasm-server
 ```
 

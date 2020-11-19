@@ -5,7 +5,7 @@ package dom
 import (
 	"image"
 
-	"github.com/gascore/dom/js"
+	"github.com/ernestrc/dom/js"
 )
 
 var (
