@@ -25,7 +25,7 @@ type Event interface {
 	IsTrusted() bool
 	Path() NodeList
 	Key() string
-	KeyCode() string
+	KeyCode() int
 	ButtonAttr() string
 
 	PreventDefault()
@@ -124,8 +124,8 @@ func (e *BaseEvent) Key() string {
 	return e.v.Get("key").String()
 }
 
-func (e *BaseEvent) KeyCode() string {
-	return e.v.Get("keyCode").String()
+func (e *BaseEvent) KeyCode() int {
+	return e.v.Get("keyCode").Int()
 }
 
 func (e *BaseEvent) ButtonAttr() string {
@@ -204,8 +204,8 @@ func (e *MouseEvent) Key() string {
 	return e.v.Get("key").String()
 }
 
-func (e *MouseEvent) KeyCode() string {
-	return e.v.Get("keyCode").String()
+func (e *MouseEvent) KeyCode() int {
+	return e.v.Get("keyCode").Int()
 }
 
 func (e *MouseEvent) ButtonAttr() string {

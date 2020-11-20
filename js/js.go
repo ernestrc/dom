@@ -162,6 +162,14 @@ func (v Value) String() string {
 	return v.Ref.String()
 }
 
+// Int converts a value to a int.
+func (v Value) Int() int {
+	if !v.Valid() {
+		return 0
+	}
+	return v.Ref.Int()
+}
+
 // IsNull checks if a value represents JS null object.
 func (v Value) IsNull() bool {
 	return v.Ref.Equal(null)
