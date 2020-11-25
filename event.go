@@ -27,6 +27,7 @@ type Event interface {
 	Key() string
 	KeyCode() int
 	ButtonAttr() string
+	ShiftKey() bool
 
 	PreventDefault()
 	StopPropagation()
@@ -126,6 +127,10 @@ func (e *BaseEvent) Key() string {
 
 func (e *BaseEvent) KeyCode() int {
 	return e.v.Get("keyCode").Int()
+}
+
+func (e *BaseEvent) ShiftKey() bool {
+	return e.v.Get("shiftKey").Bool()
 }
 
 func (e *BaseEvent) ButtonAttr() string {
